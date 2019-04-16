@@ -15,7 +15,7 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "watch:sassprefixer": "onchange -d 100 sass/style.scss -- npm-run-all build:sass build:autoprefixer",
+    "watch:sassprefixer": "onchange -d 100 sass/*.* sass/components/*.* sass/pages/*.* sass/sections/*.* -- npm-run-all build-dev:sass build:autoprefixer",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html js/*.js",
     "watch": "npm-run-all build -p watch:*"
   },
