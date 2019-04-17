@@ -3,16 +3,21 @@
 @import "normalize";
 @import "layout";
 
-/* Vendors */
-@import "../vendor/glyphter";
-
-/* Components */
-/* @import "components/form_field"; */
+/* Pages / Views */
+@import "pages/pages";
 
 /* Sections */
 @import "sections/menu";
-@import "components/menu";
 
+/* Components */
+@import "components/top_bar";
+@import "components/top_bar__exit";
+@import "components/top_bar__user";
+@import "components/top_bar__notification";
+@import "components/top_bar__wallet";
+@import "components/menu__logo_hamburger";
+@import "components/menu__link";
+@import "components/menu__manager";
 
-/* Pages / Views */
-/* import "pages/registration"; */
+/* Vendors */
+@import "../vendor/glyphter";

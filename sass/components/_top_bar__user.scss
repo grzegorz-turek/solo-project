@@ -1,0 +1,19 @@
+.top-bar--user {
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-family: $menu--font;
+    border-left: 1px solid $container--lines;
+}
+
+.top-bar--user-icon {
+    color: $top-bar--text;
+    padding-right: 13px;
+}
+
+.top-bar--user-name {
+color: $top-bar--text--user-name;
+font-size: 13px;
+font-weight: 400;
+}

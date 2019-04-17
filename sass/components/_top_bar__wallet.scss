@@ -1,0 +1,27 @@
+.top-bar--wallet {
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-family: $menu--font;
+    border-left: 1px solid $container--lines;
+}
+
+.top-bar--wallet--wallet-icon {
+    color: $top-bar--text;
+    padding-right: 13px;
+}
+
+.top-bar--wallet--balance {
+    color: $top-bar--text;
+    padding-right: 13px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-bar--wallet--arrow-icon {
+    color: $top-bar--text;
+    font-size: 10px;
+    position: relative;
+        top: 3px;
+}

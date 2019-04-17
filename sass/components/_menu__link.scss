@@ -1,0 +1,38 @@
+.menu--link {
+    color: $menu--text;
+    display: flex;
+    align-items: center;
+    font-family: $menu--font;
+    height: 40px;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.icon-general, .icon-details, .icon-links, .icon-banners, .icon-payout, .icon-postback, .icon-personaldata {
+    padding-left: 14px;
+    padding-right: 13px;
+}
+
+.menu--link--text {
+    font-size: $menu--font-size;
+}
+
+.menu--link--textdecoration-none {
+    text-decoration: none;
+}
+
+.menu--link--textdecoration-none:hover .menu--link--hover-stripe {
+    background-color: $menu--bg--hover-stripe;
+}
+
+.menu--link--textdecoration-none:hover .menu--link {
+    background-color: $menu--bg--hover;
+}
+
+.menu--link--textdecoration-none:hover .menu--link--icon, .menu--link--textdecoration-none:hover .menu--link--text {
+    color: $menu--text--hover;
+}
+
+//.menu--link--hover-stripe:last-child {
+    //padding-bottom: 100px;
+//}

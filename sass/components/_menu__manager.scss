@@ -1,0 +1,39 @@
+.menu--manager--heading {
+    font-family: $menu--font;
+    font-size: $menu--font-size;
+    color: $menu--text;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -0.28px;
+    padding-left: 18px;
+    border-top: 1px solid $menu--text;
+}
+
+.your-manager-name {
+    color: $menu--text;
+    font-family: $menu--font;
+    font-size: $menu--font-size;
+}
+
+.your-manager-photo-and-name {
+    display: flex;
+}
+
+.your-manager-photo {
+    padding-left: 18px;
+    padding-right: 10px;
+}
+
+.your-manager-name {
+    color: #56819f;
+}
+
+.your-manager-online {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #04ae00;
+    position: relative;
+        top: -48px;
+        left: 31px;
+}
