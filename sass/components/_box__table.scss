@@ -9,14 +9,12 @@
 .box--table--trow {
     display: flex;
     justify-content: center;
-}
-
-.box--table--trow:first-of-type {
-    margin: 40px 0 20px 0;
-}
-
-.box--table--trow:last-of-type {
-    margin-bottom: 40px;
+    &:first-of-type {
+        margin: 40px 0 20px 0;
+    }
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
 }
 
 .box--table--cell {
@@ -24,10 +22,9 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $box--line;
-}
-
-.box--table--cell:nth-last-of-type(odd) {
-    margin-left: 65px;
+    &:nth-of-type(even) {
+        margin-left: 65px;
+    }
 }
 
 .box--table--cell--heading {
