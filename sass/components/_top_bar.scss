@@ -1,10 +1,11 @@
 .top-bar {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 188px;
-    height: 60px;
-    width: calc(100vw - 188px);
-    border-bottom: 1px solid $container--lines;
     justify-content: flex-end;
+    position: fixed;
+        top: 0;
+        left: 188px;
+    height: 60px;
+    width: calc(100vw - 188px - 18px);
+    border-bottom: 1px solid $box--line;
+    background-color: $menu--text--hover;
 }

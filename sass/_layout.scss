@@ -5,6 +5,41 @@
 	clear: both;
  }
 
+.row {
+    display: flex;
+    margin: 0 -15px;
+
+}
+[class*="col-"] {
+	padding: 0 15px;
+}
+
+.col-1 {flex: 4.167%;}
+.col-2 {flex: 8.333%;}
+.col-3 {flex: 12.5%;}
+.col-4 {flex: 16.667%;}
+.col-5 {flex: 20.833%;}
+.col-6 {flex: 25%;}
+.col-7 {flex: 29.167%;}
+.col-8 {flex: 33.333%;}
+.col-9 {flex: 37.5%;}
+.col-10 {flex: 41.667%;}
+.col-11 {flex: 45.833%;}
+.col-12 {flex: 50%;}
+.col-13 {flex: 54.167%;}
+.col-14 {flex: 58.333%;}
+.col-15 {flex: 62.5%;}
+.col-16 {flex: 66.667%;}
+.col-17 {flex: 70.833%;}
+.col-18 {flex: 75%;}
+.col-19 {flex: 79.167%;}
+.col-20 {flex: 83.333%;}
+.col-21 {flex: 87.5%;}
+.col-22 {flex: 91.667%;}
+.col-23 {flex: 95.833%;}
+.col-24 {flex: 100%;}
+
+/*
 [class*="col-"] {
     width: 100%;
     float: left;
@@ -52,3 +87,4 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 }
+*/

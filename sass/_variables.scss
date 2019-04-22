@@ -6,12 +6,15 @@ $menu--text: #999999;
 $menu--text--hover: #ffffff;
 $top-bar--text: #9c9c9c;
 $top-bar--text--user-name: #56819f;
-$container--bg: #f5f5f2;
-$container--lines: #e3e3e3;
-$container--orange: #f58220;
+$box--line: #e3e3e3;
+$box--button-orange: #f58220;
+$box--font-color: #a6a6a6;
+$box--font-color--dark: #333333;
+$container--bg--color: #f5f5f2;
 
 /* Font sizes */
 $menu--font-size: 14px;
+$box--font-size--heading: 16px;
 
-/* Fonts */
+/* Fonts families*/
 $menu--font: 'Roboto', sans-serif;

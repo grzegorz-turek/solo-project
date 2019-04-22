@@ -17,22 +17,27 @@
     font-size: $menu--font-size;
 }
 
-.menu--link--textdecoration-none {
+.menu--link--all {
     text-decoration: none;
 }
 
-.menu--link--textdecoration-none:hover .menu--link--hover-stripe {
-    background-color: $menu--bg--hover-stripe;
+.menu--link--all:hover, .active {
+    text-decoration: none;
+
+    .menu--link--hover-stripe {
+        background-color: $menu--bg--hover-stripe;
+    }
+    .menu--link {
+        background-color: $menu--bg--hover;
+    }
+    .menu--link--icon {
+        color: $menu--text--hover;
+    }
+    .menu--link--text {
+        color: $menu--text--hover;
+    }
 }
 
-.menu--link--textdecoration-none:hover .menu--link {
-    background-color: $menu--bg--hover;
+.menu--link--container {
+    padding-bottom: 30px;
 }
-
-.menu--link--textdecoration-none:hover .menu--link--icon, .menu--link--textdecoration-none:hover .menu--link--text {
-    color: $menu--text--hover;
-}
-
-//.menu--link--hover-stripe:last-child {
-    //padding-bottom: 100px;
-//}
