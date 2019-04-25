@@ -7,24 +7,13 @@
 @import "pages/pages";
 
 /* Sections */
-@import "sections/menu";
-@import "sections/box";
 
 /* Components */
 @import "components/top_bar";
-@import "components/top_bar__exit";
-@import "components/top_bar__user";
-@import "components/top_bar__notification";
-@import "components/top_bar__wallet";
-@import "components/menu__logo_hamburger";
-@import "components/menu__link";
-@import "components/menu__manager";
-@import "components/box__heading";
-@import "components/box__calendar";
-@import "components/box__table";
-@import "components/box__graph";
-@import "components/box__link";
-
+@import "components/menu";
+@import "components/box_heading";
+@import "components/box_section";
+@import "components/box_general";
 
 /* Vendors */
 @import "../vendor/glyphter";

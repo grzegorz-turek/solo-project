@@ -9,3 +9,82 @@
     border-bottom: 1px solid $box--line;
     background-color: $menu--text--hover;
 }
+
+.top-bar--wallet {
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-family: $menu--font;
+    border-left: 1px solid $box--line;
+}
+
+.top-bar--wallet--wallet-icon {
+    color: $top-bar--text;
+    padding-right: 13px;
+}
+
+.top-bar--wallet--balance {
+    color: $top-bar--text;
+    padding-right: 13px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-bar--wallet--arrow-icon {
+    color: $top-bar--text;
+    font-size: 10px;
+    position: relative;
+        top: 3px;
+}
+
+.top-bar--notification {
+    display: flex;
+    align-items: center;
+    padding-right: 11px;
+    padding-left: 17px;
+    border-left: 1px solid $box--line;
+}
+
+.top-bar--notification-icon {
+    color: $top-bar--text;
+}
+
+.top-bar--notification-new {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $box--button-orange;
+    position: relative;
+        top: -10px;
+        left: -10px;
+}
+
+.top-bar--user {
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-family: $menu--font;
+    border-left: 1px solid $box--line;
+}
+
+.top-bar--user-icon {
+    color: $top-bar--text;
+    padding-right: 13px;
+}
+
+.top-bar--user-name {
+color: $top-bar--text--user-name;
+font-size: 13px;
+font-weight: 400;
+}
+
+.top-bar--exit {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid $box--line;
+    color: $top-bar--text;
+}

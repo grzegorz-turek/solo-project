@@ -1,0 +1,192 @@
+.box--calendar {
+    color: $box--font-color;
+    font-family: $menu--font;
+    font-size: $box--font-size--heading;
+    font-weight: 500;
+    //text-transform: uppercase;
+    padding: 18px;
+    border-top: 1px solid $box--line;
+    display: flex;
+    justify-content: center;
+}
+
+.box--calendar--picker {
+    width: 325px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid $box--line;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.box--calendar--picker-from {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+    color: $box--font-color--dark;
+    padding: 0 15px;
+}
+
+.box--calendar--picker-to {
+    border-left: 1px solid $box--line;
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+    color: $box--font-color--dark;
+    padding: 0 15px;
+}
+
+.box--calendar--picker-icon {
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+    color: $top-bar--text;
+    padding: 0 15px;
+}
+
+.box--calendar--button {
+    width: 41px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $box--button-orange;
+    border: 0;
+    color: $menu--text--hover;
+    font-size: 15px;
+    margin: 25px 15px;
+}
+
+.box--table {
+    color: $box--font-color;
+    font-family: $menu--font;
+    font-size: $box--font-size--heading;
+    padding: 18px;
+    border-top: 1px solid $box--line;
+}
+
+.box--table--trow {
+    display: flex;
+    justify-content: center;
+    &:first-of-type {
+        margin: 40px 0 20px 0;
+    }
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
+}
+
+.box--table--cell {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $box--line;
+    &:nth-of-type(even) {
+        margin-left: 65px;
+    }
+}
+
+.box--table--cell--heading {
+    color: $box--font-color;
+    font-size: $box--font-size--heading;
+    font-weight: 700;
+}
+
+.box--table--cell--value {
+    color: $box--font-color--dark;
+    font-size: $box--font-size--heading;
+    font-weight: 300;
+}
+
+.box--graph {
+    color: $box--font-color;
+    font-family: $menu--font;
+    font-size: $box--font-size--heading;
+    font-weight: 500;
+    padding: 18px;
+}
+
+.box--graph--row {
+    display: flex;
+}
+
+.box--graph--heading {
+    display: flex;
+}
+
+.box--graph--graph {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 55px 0;
+    img {
+        max-width: 100%;
+        object-fit: scale-down;
+    }
+}
+
+.box--link {
+    border-top: 1px solid $box--line;
+}
+
+.box--link--button {
+    width: 127px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $box--button-orange;
+    border: 0;
+    color: $menu--text--hover;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box--link--www-name {
+    padding: 18px 0 18px 18px;
+    color: $box--font-color;
+    font-weight: 700;
+}
+
+.box--link--www-address {
+    padding: 18px 0;
+    a {
+        color: $top-bar--text--user-name;
+        font-weight: 300;
+        text-decoration: none;
+    }
+}
+
+.box--link--icon {
+    padding: 18px 0;
+    display: flex;
+    visibility: hidden;
+}
+
+.box--link--icon--links {
+    color: $menu--bg--hover-stripe;
+    cursor: pointer;
+}
+
+.box--link--icon--trash {
+    color: $top-bar--text;
+    cursor: pointer;
+}
+
+.box--link--row {
+    border-top: 1px solid $box--line;
+    &:hover {
+        background-color: $container--bg--color;
+    }
+    &:hover .box--link--icon {
+        visibility: visible
+    }
+    &:last-of-type {
+        border-bottom: 1px solid $box--line;
+    }
+}
