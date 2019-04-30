@@ -1,0 +1,15 @@
+.box__link__button {
+    width: 127px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $box--button-orange;
+    border: 0;
+    color: $menu--text--hover;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

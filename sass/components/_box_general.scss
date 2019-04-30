@@ -1,16 +1,42 @@
-.box--calendar {
+.container {
+    width: calc(100vw - 188px - 18px - 18px - 18px);
+    margin: 78px 0 0 206px;
+    border: 3px solid black; /* DEL */
+
+}
+
+.box {
+    background-color: $menu--text--hover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 18px;
+    border: 3px solid lightgreen; /* DEL */
+
+}
+
+.box__container {
+    display: flex;
+    justify-content: center;
+    border: 3px solid red; /* DEL */
+}
+
+.box__container_688 {
+    width: 688px;
+    border: 3px solid pink; /* DEL */
+}
+
+.box__calendar {
     color: $box--font-color;
-    font-family: $menu--font;
     font-size: $box--font-size--heading;
     font-weight: 500;
-    //text-transform: uppercase;
     padding: 18px;
     border-top: 1px solid $box--line;
     display: flex;
     justify-content: center;
+    border: 3px solid yellow; /* DEL */
+
 }
 
-.box--calendar--picker {
+.box__calendar__picker {
     width: 325px;
     height: 40px;
     border-radius: 3px;
@@ -21,7 +47,7 @@
     margin: 25px 0;
 }
 
-.box--calendar--picker-from {
+.box__calendar__picker_from {
     display: flex;
     align-items: center;
     margin: 2px 0;
@@ -30,7 +56,7 @@
     padding: 0 15px;
 }
 
-.box--calendar--picker-to {
+.box__calendar__picker_to {
     border-left: 1px solid $box--line;
     display: flex;
     align-items: center;
@@ -40,7 +66,7 @@
     padding: 0 15px;
 }
 
-.box--calendar--picker-icon {
+.box__calendar__picker_icon {
     display: flex;
     align-items: center;
     margin: 2px 0;
@@ -49,7 +75,7 @@
     padding: 0 15px;
 }
 
-.box--calendar--button {
+.box__calendar__button {
     width: 41px;
     height: 40px;
     border-radius: 3px;
@@ -60,17 +86,20 @@
     margin: 25px 15px;
 }
 
-.box--table {
+.box__table {
     color: $box--font-color;
     font-family: $menu--font;
     font-size: $box--font-size--heading;
-    padding: 18px;
+    //padding: 18px;
     border-top: 1px solid $box--line;
+    border: 3px solid green; //DEL
 }
 
-.box--table--trow {
+.box__table__trow {
     display: flex;
     justify-content: center;
+    border: 3px solid silver; //DEL
+    
     &:first-of-type {
         margin: 40px 0 20px 0;
     }
@@ -79,45 +108,46 @@
     }
 }
 
-.box--table--cell {
+.box__table__cell {
     width: 310px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $box--line;
+    border: 3px solid black;
     &:nth-of-type(even) {
         margin-left: 65px;
     }
 }
 
-.box--table--cell--heading {
+.box__table__cell__heading {
     color: $box--font-color;
     font-size: $box--font-size--heading;
     font-weight: 700;
 }
 
-.box--table--cell--value {
+.box__table__cell__value {
     color: $box--font-color--dark;
     font-size: $box--font-size--heading;
     font-weight: 300;
 }
 
-.box--graph {
+.box__graph {
     color: $box--font-color;
     font-family: $menu--font;
     font-size: $box--font-size--heading;
     font-weight: 500;
-    padding: 18px;
+    //padding: 18px;
 }
 
-.box--graph--row {
+.box__graph__row {
     display: flex;
 }
 
-.box--graph--heading {
+.box__graph__heading {
     display: flex;
 }
 
-.box--graph--graph {
+.box__graph__graph {
     display: flex;
     justify-content: center;
     margin: 40px 0 55px 0;
@@ -127,33 +157,17 @@
     }
 }
 
-.box--link {
+.box__link {
     border-top: 1px solid $box--line;
 }
 
-.box--link--button {
-    width: 127px;
-    height: 40px;
-    border-radius: 3px;
-    background-color: $box--button-orange;
-    border: 0;
-    color: $menu--text--hover;
-    font-size: 18px;
-    font-weight: 300;
-    margin: 25px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.box--link--www-name {
+.box__link__www_name {
     padding: 18px 0 18px 18px;
     color: $box--font-color;
     font-weight: 700;
 }
 
-.box--link--www-address {
+.box__link__www_address {
     padding: 18px 0;
     a {
         color: $top-bar--text--user-name;
@@ -162,31 +176,62 @@
     }
 }
 
-.box--link--icon {
-    padding: 18px 0;
+.box__link__icon {
+    padding: 18px 18px 18px 0;
     display: flex;
+    justify-content: space-between;
     visibility: hidden;
 }
 
-.box--link--icon--links {
+.box__link__icon__links {
     color: $menu--bg--hover-stripe;
     cursor: pointer;
+    border: 3px solid gold; // DEL
+
 }
 
-.box--link--icon--trash {
+.box__link__icon__trash {
     color: $top-bar--text;
     cursor: pointer;
+    border: 3px solid gold; // DEL
 }
 
-.box--link--row {
+.box__link__row {
     border-top: 1px solid $box--line;
     &:hover {
         background-color: $container--bg--color;
     }
-    &:hover .box--link--icon {
+    &:hover .box__link__icon {
         visibility: visible
     }
     &:last-of-type {
         border-bottom: 1px solid $box--line;
     }
+}
+
+@media (max-width: 767px) {
+    @include grid(sm);
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .box {
+        box-shadow: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+@media(min-width: 768px) {
+    @include grid(md);
+}
+
+
+@media(min-width: 992px) {
+    @include grid(lg);
+}
+
+@media(min-width: 1200px) {
+    @include grid(xl);
 }

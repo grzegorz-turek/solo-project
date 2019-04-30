@@ -7,13 +7,24 @@
 
 .row {
     display: flex;
-    margin: 0 -15px;
+    //margin: 0 -15px;
 
 }
 [class*="col-"] {
-	padding: 0 15px;
+    //padding: 0 15px;
+    border: 3px solid pink; //DEL
 }
 
+@mixin grid($prefix) {
+    @for $i from 1 through 24 {
+        .col-#{$prefix}-#{$i} {
+            $width: 100% / 24 * $i;
+            flex: $width;
+        }
+    }
+}
+
+/*
 .col-1 {flex: 4.167%;}
 .col-2 {flex: 8.333%;}
 .col-3 {flex: 12.5%;}
@@ -39,7 +50,7 @@
 .col-23 {flex: 95.833%;}
 .col-24 {flex: 100%;}
 
-/*
+
 [class*="col-"] {
     width: 100%;
     float: left;

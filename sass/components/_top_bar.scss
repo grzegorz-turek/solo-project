@@ -1,4 +1,4 @@
-.top-bar {
+.topbar {
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -10,7 +10,7 @@
     background-color: $menu--text--hover;
 }
 
-.top-bar--wallet {
+.topbar__wallet {
     display: flex;
     align-items: center;
     padding-right: 17px;
@@ -19,26 +19,26 @@
     border-left: 1px solid $box--line;
 }
 
-.top-bar--wallet--wallet-icon {
+.topbar__wallet__wallet_icon {
     color: $top-bar--text;
     padding-right: 13px;
 }
 
-.top-bar--wallet--balance {
+.topbar__wallet__balance {
     color: $top-bar--text;
     padding-right: 13px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.top-bar--wallet--arrow-icon {
+.topbar__wallet__arrow_icon {
     color: $top-bar--text;
     font-size: 10px;
     position: relative;
         top: 3px;
 }
 
-.top-bar--notification {
+.topbar__notification {
     display: flex;
     align-items: center;
     padding-right: 11px;
@@ -46,11 +46,11 @@
     border-left: 1px solid $box--line;
 }
 
-.top-bar--notification-icon {
+.topbar__notification_icon {
     color: $top-bar--text;
 }
 
-.top-bar--notification-new {
+.topbar__notification_new {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -60,7 +60,7 @@
         left: -10px;
 }
 
-.top-bar--user {
+.topbar__user {
     display: flex;
     align-items: center;
     padding-right: 17px;
@@ -69,18 +69,18 @@
     border-left: 1px solid $box--line;
 }
 
-.top-bar--user-icon {
+.topbar__user_icon {
     color: $top-bar--text;
     padding-right: 13px;
 }
 
-.top-bar--user-name {
+.topbar__user_name {
 color: $top-bar--text--user-name;
 font-size: 13px;
 font-weight: 400;
 }
 
-.top-bar--exit {
+.topbar__exit {
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -88,3 +88,27 @@ font-weight: 400;
     border-left: 1px solid $box--line;
     color: $top-bar--text;
 }
+
+@media (max-width: 767px) {
+    .topbar {
+        display: flex;
+        //justify-content: flex-end;
+        position: static;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+
+}
+
+/*
+
+@media(min-width: 992px) {
+
+}
+
+@media(min-width: 1200px) {
+
+}
+*/

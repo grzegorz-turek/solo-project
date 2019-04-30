@@ -7,24 +7,24 @@
     height: 100%;
 }
 
-.menu--logo-hamburger {
+.menu__logo_hamburger {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
 }
 
-.menu--hamburger {
+.menu__hamburger {
     padding: 20px;
     position: relative;
     top: -1px;
 }
 
-.menu--logo {
+.menu__logo {
     padding: 20px;
 }
 
-.menu--link {
+.menu__link {
     color: $menu--text;
     display: flex;
     align-items: center;
@@ -39,35 +39,40 @@
     padding-right: 13px;
 }
 
-.menu--link--text {
+.menu__link__text {
     font-size: $menu--font-size;
 }
 
-.menu--link--all {
+.menu__link__all {
     text-decoration: none;
 }
 
-.menu--link--all:hover, .active {
+.menu__link__all:hover, .active {
     text-decoration: none;
-    .menu--link--hover-stripe {
+    .menu__link__hover_stripe {
         background-color: $menu--bg--hover-stripe;
     }
-    .menu--link {
+    .menu__link {
         background-color: $menu--bg--hover;
     }
-    .menu--link--icon {
+    .menu__link__icon {
         color: $menu--text--hover;
     }
-    .menu--link--text {
+    .menu__link__text {
         color: $menu--text--hover;
     }
 }
 
-.menu--link--container {
+.menu__link__container {
     padding-bottom: 30px;
+    border: 3px solid yellow;
 }
 
-.menu--manager--heading {
+.menu__manager__container {
+    border: 3px solid silver;
+}
+
+.menu__manager__heading {
     font-family: $menu--font;
     font-size: $menu--font-size;
     color: $menu--text;
@@ -78,26 +83,22 @@
     border-top: 1px solid $menu--text;
 }
 
-.your-manager-name {
-    color: $menu--text;
+.menu__manager_name {
+    color: $top-bar--text--user-name;
     font-family: $menu--font;
     font-size: $menu--font-size;
 }
 
-.your-manager-photo-and-name {
+.menu__manager_photo_and_name {
     display: flex;
 }
 
-.your-manager-photo {
+.menu__manager_photo {
     padding-left: 18px;
     padding-right: 10px;
 }
 
-.your-manager-name {
-    color: #56819f;
-}
-
-.your-manager-online {
+.menu__manager_online {
     width: 12px;
     height: 11px;
     border-radius: 50%;
@@ -106,3 +107,37 @@
         top: -48px;
         left: 31px;
 }
+
+.show {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .menu__link__container {
+        display: none;
+    }
+    .menu__manager__container {
+        display: none;
+    }
+    .menu {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .menu__hamburger {
+        display: none;
+    }
+}
+
+/*
+
+@media(min-width: 992px) {
+
+}
+
+@media(min-width: 1200px) {
+
+}
+*/
