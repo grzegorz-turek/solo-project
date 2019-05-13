@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet"> 
     </head>
     <body>
+<!--menu start-->
         <section class="menu">
             <div class="menu__logo_hamburger">
                 <a href="index.html"><img class="menu__logo" src="images/logo.png" alt="Logo"></a>
@@ -72,19 +73,23 @@
                     </div>
                 </a>
             </div>
-            <div class="menu__manager__heading">
-                <p>Your manager</p>
-            </div>
-            <div class="menu__manager_photo_and_name">
-                <div class="menu__manager_photo">
-                    <img src="images/manager-photo.png" alt="Manager Photo">
-                    <div class="menu__manager_online"></div>
+            <div class="menu__manager__container">
+                <div class="menu__manager__heading">
+                    <p>Your manager</p>
                 </div>
-                <div>
-                    <p class="menu__manager_name">Mikhael E.</p>
+                <div class="menu__manager_photo_and_name ">
+                    <div class="menu__manager_photo">
+                        <img src="images/manager-photo.png" alt="Manager Photo">
+                        <div class="menu__manager_online"></div>
+                    </div>
+                    <div>
+                        <p class="menu__manager_name">Mikhael E.</p>
+                    </div>
                 </div>
             </div>
         </section>
+<!--menu end-->
+<!--topbar start-->
         <section class="topbar">
             <div class="topbar__wallet">
                     <div class="icon-wallet topbar__wallet__wallet_icon"></div>
@@ -101,11 +106,128 @@
             </div>
             <div class="topbar__exit icon-quit"></div>
         </section>
-        <section class="container">
+<!--topbar end-->
+<!--content start-->
+        <section>
             <div class="box">
-                <div class="box__heading">Postback</div>
+                <div class="box__heading">New postback</div>
+                <div class="box__fluid">
+                    <form action="" method="POST" class="postback">
+                        <div class="postback__title">You can insert some parameters in this postback:</div>
+                        <div class="postback__box">
+                            <div class="field">
+                                <div class="label">
+                                    <label for="story">Signup</label>
+                                </div>
+                                <textarea id="signup" name="signup" class="postback__textarea" rows="5">crm_userid =%user_id% subid =%p%</textarea>
+                            </div>
+                            <div class="field">
+                                <div class="label">
+                                    <label for="deposit">Deposit</label>
+                                </div>
+                                <textarea id="deposit" name="deposit" class="postback__textarea" rows="5">crm_userid =%user_id% subid =%p%</textarea>
+                            </div>
+                        </div>
+                        <div class="postback__box">
+                            <div class="field">
+                                <div class="label">
+                                    <label for="postback-type">Postback type</label>
+                                </div>
+                                <select name="postback-type" id="postback-type">
+                                    <option value="item-1">S2S (htp://...)<div class="icon-arrow-down"></div></option>
+                                    <option value="item-2">IPsec</option>
+                                    <option value="item-3">DNS</option>
+                                    <option value="item-4">DHCP</option>
+                                    <option value="item-5">IAX</option>
+                                    <option value="item-5">InterMUD</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <div class="label">
+                                    <label for="postback-country">To countries</label>
+                                </div>
+                                <select name="postback-country" id="postback-country">
+                                    <option value="">Select countries</option>
+                                    <option value="item-2">Germany</option>
+                                    <option value="item-3">France</option>
+                                    <option value="item-4">United Kingdom</option>
+                                    <option value="item-5">Swiss</option>
+                                    <option value="item-5">Belgium</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <div class="label">
+                                    <label for="postback-type">Sending options</label>
+                                </div>
+                                <select name="postback-type" id="postback-type">
+                                    <option value="">Select</option>
+                                    <option value="item-2">Kick'em all</option>
+                                    <option value="item-3">Fuck'em all</option>
+                                    <option value="item-4">Kill'em all</option>
+                                    <option value="item-5">Reverse'em all</option>
+                                    <option value="item-5">Interpid'em all</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="postback__box">
+                            <div class="field__wide">
+                                <div class="postback__heading label"><span class="red_bold">NOT</span> send statuses</div>
+                                <div class="postback__values">
+                                    <div class="postback__checkbox">
+                                        <input type="checkbox" id="checkNumber" name="checkNumber">
+                                        <div class="postback__icon"></div>
+                                        <label>checkNumber</label>
+                                    </div>
+                                    <div class="postback__checkbox">
+                                        <input type="checkbox" id="noAnswer" name="noAnswer">
+                                        <div class="postback__icon"></div>
+                                        <label>noAnswer</label>
+                                    </div>
+                                    <div class="postback__checkbox">
+                                        <input type="checkbox" id="noCall" name="noCall">
+                                        <div class="postback__icon"></div>
+                                        <label>noCall</label>
+                                    </div>
+                                    <div class="postback__checkbox">
+                                        <input type="checkbox" id="callAgain" name="callAgain">
+                                        <div class="postback__icon"></div>
+                                        <label>callAgain</label>
+                                    </div>
+                                    <div class="postback__checkbox">
+                                        <input type="checkbox" id="noShit" name="noShit">
+                                        <div class="postback__icon"></div>
+                                        <label>noShit</label>
+                                    </div>
+                                    <div class="postback__checkbox">
+                                        <input type="checkbox" id="noWay" name="noWay">
+                                        <div class="postback__icon"></div>
+                                        <label>noWay</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field__wide">
+                                <div class="postback__heading label">Send after:</div>
+                                <div class="postback__values">
+                                    <input type="range" list="tickmarks" min="0" max="168" value="104" step="1">
+                                    <datalist id="tickmarks">
+                                        <option value="0" label="0">
+                                        <option value="168" label="1">
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+<!--<div class="br"></div>-->
+                        <div class="postback__box button__right">
+                            <div class="postback__button">
+                                <button type="submit" class="button__text">Create Pixel</button>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
             </div>
         </section>
-            <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/togglemenu.js"></script>
     </body>
 </html>

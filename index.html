@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet"> 
     </head>
     <body>
+<!--menu start-->
         <section class="menu">
             <div class="menu__logo_hamburger">
                 <a href="index.html"><img class="menu__logo" src="images/logo.png" alt="Logo"></a>
@@ -87,6 +88,8 @@
                 </div>
             </div>
         </section>
+<!--menu end-->
+<!--topbar start-->
         <section class="topbar">
             <div class="topbar__wallet">
                     <div class="icon-wallet topbar__wallet__wallet_icon"></div>
@@ -103,152 +106,168 @@
             </div>
             <div class="topbar__exit icon-quit"></div>
         </section>
-        <section class="container">
+<!--topbar end-->
+<!--content start-->
+        <section>
             <div class="box">
                 <div class="box__heading">General Statistics</div>
-                <div class="box__calendar">
-                    <div class="box__calendar__picker">
-                        <div class="box__calendar__picker_from">16.05.2016</div>
-                        <div class="box__calendar__picker_to">16.05.2016</div>
-                        <div class="box__calendar__picker_icon icon-calendar"></div>
+                <div class="box__fluid">
+                    <div class="calendar">
+                        <form>
+                            <input type="date" class="calendar__from" id="id_date_from" name="name_date_from" value="2016-05-16">
+                            <input type="date" class="calendar__to" id="id_date_to" name="name_date_to" value="2016-05-16">
+                        </form>
+                        <div class="calendar__icon icon-calendar"></div>
                     </div>
-                    <button class="box__calendar__button icon-refresh"></button>
+                    <button class="calendar__button icon-refresh"></button>
                 </div>
-                <div class="box__table-and-graph">
-                    <div class="box__table">
-                        <div class="box__table__trow">
-                            <div class="box__table__cell">
-                                <div class="box__table__cell__heading">Visit Signups</div>
-                                <div class="box__table__cell__value">124</div>
-                            </div>
-                            <div class="box__table__cell">
-                                <div class="box__table__cell__heading">Net Deposit</div>
-                                <div class="box__table__cell__value">564</div>
-                            </div>
-                        </div>
-                        <div class="box__table__trow">
-                            <div class="box__table__cell">
-                                <div class="box__table__cell__heading">FTD</div>
-                                <div class="box__table__cell__value">445</div>
-                            </div>
-                            <div class="box__table__cell">
-                                <div class="box__table__cell__heading">Turnover</div>
-                                <div class="box__table__cell__value">432</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box__graph">
-                        <div class="box__container">
-                            <div class="box__container_688">
-                                <div class="box__graph__heading">Earnings chart</div>
-                            </div>
-                        </div>
-                        <div class="box__container">
-                            <div class="box__container_688">
-                                <div class="box__graph__graph">
-                                    <img src="images/graph.png" alt="Earnings Chart">
-                                </div>
-                            </div>
-                        </div>
+                <div class="box__fluid">
+                    <div class="box__fluid_688">
+                        <table class="data">
+                            <tr class="data__row">
+                                <td class="data__heading">Visit Signups</td>
+                                <td class="data__value">124</td>
+                                <td class="data__space"></td>
+                                <td class="data__heading">Net Deposit</td>
+                                <td class="data__value">445</td>
+                            </tr>
+                            <tr class="data__row">
+                                    <td></td>
+                                    <td></td>
+                                    <td class="data__space"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr class="data__row">
+                                <td class="data__heading">FTD</td>
+                                <td class="data__value">124</td>
+                                <td class="data__space"></td>
+                                <td class="data__heading">Turnover</td>
+                                <td class="data__value">442</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
+                <div class="box__fluid">
+                    <div class="box__fluid_688">
+                        <div class="graph__heading">Earnings chart</div>
+                        <img src="images/graph.png" alt="Earnings Chart" class="graph__picture">
+                    </div>
+                </div>    
             </div>
             <div class="box">
-                <div class="box__heading">links</div>
-                <div class="box__link">
-                    <div class="box__container">
-                        <div class="box__link__button">+add new</div>
+                <div class="box__heading">Links</div>
+                <div class="box__fluid">
+                    <div class="box__fluid_688">
+                        <div class="button__text">+add new</div>
+                        <table class="table_sm">
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Home Page</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.homepage.com">http://www.homepage.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Currently Offer</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.currently.com">http://www.currently.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Bluprix</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.bluprix.com">http://www.bluprix.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Your Site</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.yoursite.com">http://www.yoursite.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Google</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.google.com">http://www.google.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Facebook</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.facebook.com">http://www.facebook.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Dashboard</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.dashbord.com">http://www.dashbord.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Bluerax</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http:/www.bluerax.com">http:/www.bluerax.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Piece of Wine</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table_sm__name">Twitter</td>
+                                <td class="table__cell table_sm__address">
+                                    <a href="http://www.twitter.com">http://www.twitter.com</a>
+                                </td>
+                                <td class="table__cell table_sm__icon">
+                                    <div class="icon-links table_sm__icon__links"></div>
+                                    <div class="icon-trash table_sm__icon__trash"></div>        
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="button__text">+add new</div>
                     </div>
-                    <div class="box__container">
-                        <div class="box__container_688">
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Home Page</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.homepage.com">http://www.homepage.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Currently Offer</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.currently.com">http://www.currently.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Bluprix</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.bluprix.com">http://www.bluprix.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Your Site</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.yoursite.com">http://www.yoursite.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Google</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.google.com">http://www.google.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Facebook</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.facebook.com">http://www.facebook.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Dashboard</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.dashbord.com">http://www.dashbord.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Bluerax</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.bluerax.com">http:/www.bluerax.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Piece of Wine</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                            <div class="row box__link__row">
-                                <div class="box__link__www_name col-sm-8 col-md-8 col-lg-8 col-xl-8">Twitter</div>
-                                <div class="box__link__www_address col-sm-13 col-md-13 col-lg-13 col-xl-13"><a href="http://www.twitter.com">http://www.twitter.com</a></div>
-                                <div class="box__link__icon col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="icon-links box__link__icon__links"></div>
-                                    <div class="icon-trash box__link__icon__trash"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box__container">
-                        <div class="box__link__button">+add new</div>
-                    </div>
-                </div> 
+                </div>
             </div>
         </section>
+<!--content end-->
         <script src="js/script.js"></script>
         <script src="js/togglemenu.js"></script>
     </body>

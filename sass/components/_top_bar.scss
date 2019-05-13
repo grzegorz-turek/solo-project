@@ -4,8 +4,8 @@
     position: fixed;
         top: 0;
         left: 188px;
+        right: 0vw;
     height: 60px;
-    width: calc(100vw - 188px - 18px);
     border-bottom: 1px solid $box--line;
     background-color: $menu--text--hover;
 }

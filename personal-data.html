@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet"> 
     </head>
     <body>
+<!--menu start-->
         <section class="menu">
             <div class="menu__logo_hamburger">
                 <a href="index.html"><img class="menu__logo" src="images/logo.png" alt="Logo"></a>
@@ -72,19 +73,23 @@
                     </div>
                 </a>
             </div>
-            <div class="menu__manager__heading">
-                <p>Your manager</p>
-            </div>
-            <div class="menu__manager_photo_and_name">
-                <div class="menu__manager_photo">
-                    <img src="images/manager-photo.png" alt="Manager Photo">
-                    <div class="menu__manager_online"></div>
+            <div class="menu__manager__container">
+                <div class="menu__manager__heading">
+                    <p>Your manager</p>
                 </div>
-                <div>
-                    <p class="menu__manager_name">Mikhael E.</p>
+                <div class="menu__manager_photo_and_name ">
+                    <div class="menu__manager_photo">
+                        <img src="images/manager-photo.png" alt="Manager Photo">
+                        <div class="menu__manager_online"></div>
+                    </div>
+                    <div>
+                        <p class="menu__manager_name">Mikhael E.</p>
+                    </div>
                 </div>
             </div>
         </section>
+<!--menu end-->
+<!--topbar start-->
         <section class="topbar">
             <div class="topbar__wallet">
                     <div class="icon-wallet topbar__wallet__wallet_icon"></div>
@@ -101,11 +106,72 @@
             </div>
             <div class="topbar__exit icon-quit"></div>
         </section>
-        <section class="container">
+<!--topbar end-->
+<!--content start-->
+        <section>
             <div class="box">
-                <div class="box__heading">Personal Datat</div>
+                <div class="box__heading">Personal data</div>
+                <div class="box__fluid">
+                    <form action="" method="POST" class="personal_data">
+                        <div class="field">
+                            <div class="label">
+                                <label>Name</label>
+                            </div>
+                            <input type="text" name="user-name" value="Leonardo">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                <label>Surname</label>
+                            </div>
+                            <input type="text" name="user-surname" value="DiCaprio">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                <label>e-mail</label>
+                            </div>
+                            <input type="text" name="e-mail" value="leo@easyhookups.com">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                <label>Phone number</label>
+                            </div>
+                            <input type="text" name="phone" value="+1 434 555 9021">
+                        </div>
+                        <div class="br"></div>
+                        <div class="field">
+                            <div class="label">
+                                <label>Skype</label>
+                            </div>
+                            <input type="text" name="skype" value="EzeLeo">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                <label>ICQ</label>
+                            </div>
+                            <input type="text" name="icq">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                <label>Msn</label>
+                            </div>
+                            <input type="text" name="msn">
+                        </div>
+                        <div class="br"></div>
+                        <div class="field">
+                            <div class="label">
+                                <label>Wallet</label>
+                            </div>
+                            <input type="text" name="wallet">
+                        </div>
+                        <div class="br"></div>
+                        <div>
+                            <button type="submit" class="button__text">Save</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
-            <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/togglemenu.js"></script>
     </body>
 </html>
