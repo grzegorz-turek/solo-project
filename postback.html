@@ -112,20 +112,20 @@
             <div class="box">
                 <div class="box__heading">New postback</div>
                 <div class="box__fluid">
-                    <form action="" method="POST" class="postback">
+                    <form action="" method="POST" class="postback" oninput="result.value=parseInt(range.value)">
                         <div class="postback__title">You can insert some parameters in this postback:</div>
                         <div class="postback__box">
                             <div class="field">
                                 <div class="label">
                                     <label for="story">Signup</label>
                                 </div>
-                                <textarea id="signup" name="signup" class="postback__textarea" rows="5">crm_userid =%user_id% subid =%p%</textarea>
+                                <textarea id="signup" name="signup" class="postback__textarea" rows="5" placeholder="crm_userid =%user_id%&#10;subid =%p%"></textarea>
                             </div>
                             <div class="field">
                                 <div class="label">
                                     <label for="deposit">Deposit</label>
                                 </div>
-                                <textarea id="deposit" name="deposit" class="postback__textarea" rows="5">crm_userid =%user_id% subid =%p%</textarea>
+                                <textarea id="deposit" name="deposit" class="postback__textarea" rows="5"placeholder="crm_userid =%user_id%&#10;subid =%p%"></textarea>
                             </div>
                         </div>
                         <div class="postback__box">
@@ -162,10 +162,10 @@
                                 <select name="postback-type" id="postback-type">
                                     <option value="">Select</option>
                                     <option value="item-2">Kick'em all</option>
-                                    <option value="item-3">Fuck'em all</option>
-                                    <option value="item-4">Kill'em all</option>
+                                    <option value="item-3">Snitch'em all</option>
+                                    <option value="item-4">Hit'em all</option>
                                     <option value="item-5">Reverse'em all</option>
-                                    <option value="item-5">Interpid'em all</option>
+                                    <option value="item-5">Get'em all</option>
                                 </select>
                             </div>
                         </div>
@@ -207,12 +207,17 @@
                             </div>
                             <div class="field__wide">
                                 <div class="postback__heading label">Send after:</div>
-                                <div class="postback__values">
-                                    <input type="range" list="tickmarks" min="0" max="168" value="104" step="1">
-                                    <datalist id="tickmarks">
-                                        <option value="0" label="0">
-                                        <option value="168" label="1">
-                                    </datalist>
+                                <div class="postback__range">
+                                    <div class="range__box">
+                                        <div class="range__label">
+                                            <div>0</div>
+                                            <div>
+                                                <output name="result">106</output> hours
+                                            </div>
+                                            <div>168</div>
+                                        </div>
+                                        <input type="range" name="range" min="0" max="168" value="106" step="1">
+                                    </div>
                                 </div>
                             </div>
                         </div>
