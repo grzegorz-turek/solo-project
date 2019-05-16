@@ -69,7 +69,8 @@
 }
 
 .menu__manager__container {
-    //border: 3px solid silver;
+    border: 3px solid silver; //DEL
+    cursor: pointer;
 }
 
 .menu__manager__heading {
@@ -81,6 +82,8 @@
     letter-spacing: -0.28px;
     padding: 20px 0 0 18px;
     border-top: 1px solid $menu--text;
+    border: 3px solid gold; //DEL
+
 }
 
 .menu__manager_name {
@@ -91,11 +94,14 @@
 
 .menu__manager_photo_and_name {
     display: flex;
+    border: 3px solid red; //DEL
 }
 
 .menu__manager_photo {
     padding-left: 18px;
     padding-right: 10px;
+    //border: 3px solid lawngreen; //DEL
+
 }
 
 .menu__manager_online {
@@ -107,7 +113,6 @@
         top: -48px;
         left: 31px;
 }
-
 
 @media (max-width: 767px) {
     .menu__link__container {

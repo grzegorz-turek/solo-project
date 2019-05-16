@@ -18,15 +18,12 @@
 .box__fluid_688 {
     width: 688px;
     margin: 0 20px;
-    //max-width: 688px;
-    //margin: auto;
     //border: 3px solid yellowgreen; //DEL
 }
 
 .data {
     width: 100%;
     max-width: 100%;
-    //margin: 40px 0;
     border-collapse: collapse;
     white-space: nowrap;
     //border: 3px solid red; //DEL    
@@ -142,12 +139,10 @@
     border-collapse: collapse;
     white-space: nowrap;
     //border: 3px solid gold; //DEL
-
 }
 
 .table__links {
     list-style-type: none;
-    //border: 3px solid blueviolet; //DEL
     display: flex;
     margin: 0;
     padding-bottom: $padding--bottom;
@@ -241,7 +236,6 @@
     //border: 3px solid yellow; //DEL
     width: 150px;
     color: $box--font-color;
-    //font-size: 16px;
     font-weight: 700;
 }
 
@@ -267,7 +261,7 @@
 .postback__box {
     display: flex;
     width: 100%;
-    //border: 3px solid red; //DEL
+    //border: 3px solid orangered; //DEL
 }
 
 .postback__title {
@@ -279,14 +273,8 @@
 
 .postback .field {
     display: block;
-    //align-items: center;
-    //justify-content: center;
-    //margin: 0 0 15px 0;
     //border: 3px solid blue; //DEL
     width: 100%;
-    //&:nth-of-type(odd) {
-    //    margin: 0 18px 0 0;
-    //}
     &:not(:last-of-type) {
         margin-right: 18px;
     }
@@ -351,7 +339,6 @@
 .postback__checkbox {
     display: flex;
     align-items: center;
-   // margin-left: 15px;
     //border: 3px solid violet; //DEL
     input[type="checkbox"] {
         position: absolute;
@@ -398,7 +385,6 @@
 
 #postback-type, #postback-country {
     appearance: none;
-    //background-color: #ffffff;
     padding: 5px 30px 5px 10px;
     font-size: 14px;
     display: block;
@@ -429,25 +415,29 @@
     //border: 3px solid blue; //DEL
 }
 
-// range styling - start
+// ************************ range styling - start ************************
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     background: transparent;
-  }
-  input[type=range]::-webkit-slider-thumb {
+}
+
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-  }
-  input[type=range]:focus {
+}
+
+input[type=range]:focus {
     outline: none;
-  }
-  input[type=range]::-ms-track {
+}
+
+input[type=range]::-ms-track {
     width: 100%;
     cursor: pointer;
     background: transparent; 
     border-color: transparent;
     color: transparent;
-  }
+}
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
@@ -457,8 +447,9 @@ input[type=range]::-webkit-slider-thumb {
     transform: rotate(45deg) translate(10px, 10px);
     cursor: pointer;
     margin-top: -14;
-  }
-  input[type=range]::-moz-range-thumb {
+}
+
+input[type=range]::-moz-range-thumb {
     border: 0;
     height: 20px;
     width: 20px;
@@ -466,27 +457,31 @@ input[type=range]::-webkit-slider-thumb {
     background: linear-gradient(135deg, $box--button-orange 50%, transparent 50%) content-box, linear-gradient(135deg, white 50%, transparent 50%) border-box;
     transform: rotate(45deg) translate(15px, 15px);
     cursor: pointer;
-  }
-  input[type=range]::-ms-thumb {
+}
+
+input[type=range]::-ms-thumb {
     height: 20px;
     width: 20px;
     background: linear-gradient(135deg, $box--button-orange 50%, transparent 50%) content-box, linear-gradient(135deg, white 50%, transparent 50%) border-box;
     transform: rotate(45deg) translate(15px, 15px);
     cursor: pointer;
-  }
-  input[type=range]::-webkit-slider-runnable-track {
+}
+
+input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 7px;
     cursor: pointer;
     background: $box--button-orange;
-  }
-  input[type=range]::-moz-range-track {
+}
+
+input[type=range]::-moz-range-track {
     width: 100%;
     height: 7px;
     cursor: pointer;
     background: $box--button-orange;
-  }
-  input[type=range]::-ms-track {
+}
+
+input[type=range]::-ms-track {
     width: 100%;
     height: 7px;
     cursor: pointer;
@@ -494,22 +489,317 @@ input[type=range]::-webkit-slider-thumb {
     border-color: transparent;
     border-width: 16px 0;
     color: transparent;
-  }
-  input[type=range]::-ms-fill-lower {
+}
+
+input[type=range]::-ms-fill-lower {
     background: $box--button-orange;
-  }
-  input[type=range]::-ms-fill-upper {
+}
+
+input[type=range]::-ms-fill-upper {
     background: $box--line;
-  }
-// range styling end
+}
+// ************************ range styling - end ************************
+// ************************ modal stying - start ************************
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 40px;
+    display: none;
+}
+
+.overlay.show {
+    display: flex;
+}
+
+.modal {
+    width: 100%;
+    background-color: #ffffff;
+    //position: relative;
+    display: none;
+    //border: 3px solid yellow; //DEL
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal__fluid {
+    display: flex;
+    justify-content: center;
+    //border: 3px solid blue; //DEL
+    margin-bottom: $padding--bottom--modal;
+}
+
+.links-modal {
+    //border: 5px solid gray;
+    width: 100%;
+}
+
+.modal .postback__box {
+    &:not(:last-of-type) {
+        padding-bottom: $padding--bottom--modal;
+    }    
+}
+
+.modal .heading__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $padding--bottom--modal;
+    border-bottom: 1px solid $box--line;
+    padding: 18px;
+    //border: 3px solid red; //DEL
+}
+
+.modal .heading {
+    color: $box--font-color;
+    font-size: $box--font-size--heading;
+    font-weight: 500;
+    text-transform: uppercase;
+    //border: 3px solid gold; //DEL
+}
+
+.modal .btn-close {
+    color: $box--font-color;
+    font-size: $box--font-size--heading;
+    font-weight: 500;
+    cursor: pointer;
+    //border: 3px solid blue; //DEL
+}
+
+.modal .label {
+    margin: 0 0 20px 0;
+    color: $box--font-color;
+    font-size: 16px;
+    font-weight: 700;
+    //border: 3px solid orange; //DEL
+
+}
+
+.modal .field {
+    //border: 3px solid black; //DEL
+    width: 100%;
+    margin-right: 15px;
+    &:first-of-type {
+        margin-left: 15px;
+    }
+}
+
+.modal .field__wide {
+    flex: 43%;
+}
+
+.modal .field__narrow {
+    flex: 14%;
+}
+
+.modal input[type="text"] {
+    border-radius: 3px;
+    border: 1px solid $box--line;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    color: $box--font-color--dark;
+    font-size: 14px;
+    font-weight: 300;
+    //border: 3px solid gray; //DEL
+
+}
+.modal #select-campaign, .modal #language {
+    appearance: none;
+    padding: 0 10px;
+    height: 40px;
+    font-size: 14px;
+    display: block;
+    outline: none;
+    background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png);
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    border-radius: 3px;
+    border: 1px solid $box--line;
+    width: 100%;
+    color: $box--font-color--dark;
+    font-weight: 300;
+    //border: 3px solid black; //DEL
+}
+// ************************ modal stying - end ************************
+
+//************************ checkbox styling - start ************************
+.select__website__heading {
+    //border: 3px solid gold; //DEL
+    margin: 20px 15px;
+    color: $box--font-color;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.select__website__values {
+    //border: 3px solid purple; //DEL
+    display: flex;
+    height: 180px;
+    overflow-y: auto;
+}
+
+.select__website__column {
+    width: 100%;
+    margin-right: 15px;
+    &:first-of-type {
+        margin-left: 15px;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //border: 3px solid blue; //DEL
+    &:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    padding: 10px;
+    &:hover {
+        background-color: $checkbox--hover;
+    }
+    &:hover .checkbox__right {
+        visibility: visible;
+    }
+}
+
+.checkbox__left {
+    //border: 2px solid lightgreen; //DEL
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__right {
+    //border: 2px solid saddlebrown; //DEL
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.checkbox .icon-show {
+    color: $top-bar--text--user-name;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+        top: 3px;
+}
+
+.checkbox__box {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $box--line;
+    //border: 5px solid yellow; //DEL
+}
+
+.checkbox label {
+    position: relative;
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 20px;
+    //color: $box--font-color;
+    font-size: 14px;
+    font-weight: 300;
+    color: $box--font-color--dark;
+    cursor: pointer;
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+    }
+    &::before {
+        height: 14px;
+        width: 14px;
+        border: 1px solid $box--font-color--dark;
+        left: -12px;
+    }
+    &::after {
+        height: 4px;
+        width: 8px;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: rotate(-45deg);
+        left: -9px;
+        top: 4px;
+    }
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    + label::after {
+        content: none;
+    }
+    &:checked + label::after {
+        content: "";
+    }
+    &:checked + label::before {
+        background: $box--button-orange;
+    }
+}
+
+//************************ checkbox styling - end ************************
+
+.select__website__genlink {
+    //border: 1px solid green; //DEL
+    width: 100%;
+    margin-left: 20px;
+}
+
+.select__website__buttons {
+    //border: 1px solid blueviolet; //DEL
+    display: flex
+}
+
+.modal button {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    &:last-of-type {
+        margin-right: 15px;
+    }
+}
+
+.modal .button__title {
+    position: relative;
+    left: -10px;
+}
+
+.modal .button__icon {
+    position: relative;
+    left: -10px;
+    top: 2px;
+}
+
+.modal .button__narrow {
+    width: 90px;
+    //border: 5px solid lightseagreen; //DEL
+}
+
+.button__inactive {
+    background: $box--line;
+}
 
 @media (max-width: 767px) {
     .box {
         box-shadow: 0;
         width: 100%;
         margin: 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
 }
+
 /*
 @media(min-width: 768px) {
     @include grid(md);

@@ -1,4 +1,5 @@
 /* Colors */
+/* Margins, paddings */
 /* Font sizes */
 /* Fonts families*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -643,6 +644,11 @@ body {
   padding-bottom: 30px;
 }
 
+.menu__manager__container {
+  border: 3px solid silver;
+  cursor: pointer;
+}
+
 .menu__manager__heading {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -652,6 +658,7 @@ body {
   letter-spacing: -0.28px;
   padding: 20px 0 0 18px;
   border-top: 1px solid #999999;
+  border: 3px solid gold;
 }
 
 .menu__manager_name {
@@ -663,6 +670,7 @@ body {
 .menu__manager_photo_and_name {
   display: -ms-flexbox;
   display: flex;
+  border: 3px solid red;
 }
 
 .menu__manager_photo {
@@ -1259,11 +1267,308 @@ input[type=range]::-ms-fill-upper {
   background: #e3e3e3;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 40px;
+  display: none;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal {
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal__fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 25px;
+}
+
+.links-modal {
+  width: 100%;
+}
+
+.modal .postback__box:not(:last-of-type) {
+  padding-bottom: 25px;
+}
+
+.modal .heading__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 18px;
+}
+
+.modal .heading {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.modal .btn-close {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal .label {
+  margin: 0 0 20px 0;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.modal .field {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.modal .field:first-of-type {
+  margin-left: 15px;
+}
+
+.modal .field__wide {
+  -ms-flex: 43%;
+      flex: 43%;
+}
+
+.modal .field__narrow {
+  -ms-flex: 14%;
+      flex: 14%;
+}
+
+.modal input[type="text"] {
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.modal #select-campaign, .modal #language {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 10px;
+  height: 40px;
+  font-size: 14px;
+  display: block;
+  outline: none;
+  background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png);
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  color: #333333;
+  font-weight: 300;
+}
+
+.select__website__heading {
+  margin: 20px 15px;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.select__website__values {
+  display: -ms-flexbox;
+  display: flex;
+  height: 180px;
+  overflow-y: auto;
+}
+
+.select__website__column {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.select__website__column:first-of-type {
+  margin-left: 15px;
+}
+
+.checkbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 10px;
+}
+
+.checkbox:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.checkbox:hover {
+  background-color: #f2f2f2;
+}
+
+.checkbox:hover .checkbox__right {
+  visibility: visible;
+}
+
+.checkbox__left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.checkbox__right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  visibility: hidden;
+}
+
+.checkbox .icon-show {
+  color: #56819f;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+}
+
+.checkbox__box {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.checkbox label {
+  position: relative;
+  /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+  cursor: pointer;
+}
+
+.checkbox label::before, .checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.checkbox label::before {
+  height: 14px;
+  width: 14px;
+  border: 1px solid #333333;
+  left: -12px;
+}
+
+.checkbox label::after {
+  height: 4px;
+  width: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  left: -9px;
+  top: 4px;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: #f58220;
+}
+
+.select__website__genlink {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.select__website__buttons {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal button {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.modal button:last-of-type {
+  margin-right: 15px;
+}
+
+.modal .button__title {
+  position: relative;
+  left: -10px;
+}
+
+.modal .button__icon {
+  position: relative;
+  left: -10px;
+  top: 2px;
+}
+
+.modal .button__narrow {
+  width: 90px;
+}
+
+.button__inactive {
+  background: #e3e3e3;
+}
+
 @media (max-width: 767px) {
   .box {
     box-shadow: 0;
     width: 100%;
     margin: 0;
+  }
+  .box:first-of-type {
+    margin-top: 0;
   }
 }
 
