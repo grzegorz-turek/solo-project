@@ -1,22 +1,11 @@
 @import "variables";
-@import "mixins";
 @import "normalize";
 @import "layout";
-
-/* Pages / Views */
 @import "pages/pages";
-
-/* Sections */
-
-/* Components */
 @import "components/top_bar";
 @import "components/menu";
-@import "components/box_heading";
-@import "components/box_button_text";
-@import "components/box_general";
+@import "components/heading";
+@import "components/button";
+@import "components/general";
 @import "components/calendar";
-//@import "components/jqueryselectBoxIt";
-
-
-/* Vendors */
 @import "../vendor/glyphter";

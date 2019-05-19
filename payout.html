@@ -9,7 +9,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet"> 
     </head>
     <body>
-<!--menu start-->
         <section class="menu">
             <div class="menu__logo_hamburger">
                 <a href="index.html"><img class="menu__logo" src="images/logo.png" alt="Logo"></a>
@@ -73,7 +72,7 @@
                     </div>
                 </a>
             </div>
-            <div class="menu__manager__container">
+            <div class="menu__manager__container button" data-modal="modalTwo">
                 <div class="menu__manager__heading">
                     <p>Your manager</p>
                 </div>
@@ -88,8 +87,6 @@
                 </div>
             </div>
         </section>
-<!--menu end-->
-<!--topbar start-->
         <section class="topbar">
             <div class="topbar__wallet">
                     <div class="icon-wallet topbar__wallet__wallet_icon"></div>
@@ -100,14 +97,12 @@
                     <div class="topbar__notification_icon icon-notification"></div>
                     <div class="topbar__notification_new"></div>
             </div>
-            <div class="topbar__user">
+            <div class="topbar__user button" data-modal="modalFour">
                 <div class="topbar__user_icon icon-profile"></div>
                 <div class="topbar__user_name">Leonardo DiCaprio</div>
             </div>
-            <div class="topbar__exit icon-quit"></div>
+            <div class="topbar__exit icon-quit button" data-modal="modalThree"></div>
         </section>
-<!--topbar end-->
-<!--content start-->
         <section>
             <div class="box">
                 <div class="box__heading">Payout</div>
@@ -224,7 +219,79 @@
                 </div>
             </div>
         </section>
+        <section class="modalsec">
+            <div class="modal" id="modalTwo">
+                <div class="modal-content">
+                    <div class="heading__box">
+                        <div class="heading">Online chat with your Manager</div>
+                        <div class="btn-close close icon-close"></div>
+                    </div>          
+                    <div class="chat__fluid">
+                        <div class="chat__box__manager">
+                            <img src="images/manager-photo.png" alt="Manager Photo" class="manager__photo">
+                        </div>
+                        <div class="chat__box__manager">
+                            <div class="manager__name">Mikhael E.</div>
+                            <div class="manager__status">online</div>
+                        </div>
+                    </div>
+                    <div class="chat__box bottom__line">
+                        <div class="display__flex">
+                            <div class="chat__field chat__field__manager">Can I help you?</div>
+                        </div>
+                        <div class="display__flex">
+                            <div class="chat__field chat__field__user">Hello, I would like to know about Postback.</div>
+                        </div>
+                        <div class="display__flex">
+                            <div class="chat__field chat__field__manager">5 min., Ok?</div>
+                        </div>
+                    </div>
+                    <div class="postback__box">
+                        <div class="select__website__genlink">
+                            <input type="text" id="chatform" name="chatform" placeholder="Enter message">
+                        </div>
+                        <div class="select__website__buttons">
+                            <button class="button__text button__narrow" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalThree">
+                <div class="modal-content-2">
+                    <div class="heading__box">
+                        <div class="heading">Do you really want to quit?</div>
+                    </div> 
+                    <div class="select__modal__buttons">
+                        <div class="modal__buttons__box">
+                            <button class="button__text close exit__button" type="submit">Cancel</button>
+                            <button class="button__text" type="submit">Quit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalFour">
+                <div class="modal-content-3">
+                    <div class="heading__box">
+                        <div class="heading">Login</div>
+                    </div>
+                    <div>
+                        <form action="" method="POST" class="links-modal">
+                            <div class="postback__box">
+                                <div class="field__login field__wide">
+                                    <input type="text" id="loginname" name="loginname" placeholder="login name">
+                                </div>
+                                <div class="field__login field__wide">
+                                    <input type="text" id="password" name="password" placeholder="password">
+                                </div>
+                                <button class="button__text" type="submit">Enter</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>    
+        </section>
         <script src="js/script.js"></script>
         <script src="js/togglemenu.js"></script>
+        <script src="js/showmodal.js"></script>
     </body>
 </html>
