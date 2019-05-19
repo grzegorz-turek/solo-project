@@ -134,12 +134,12 @@
                                     <label for="postback-type">Postback type</label>
                                 </div>
                                 <select name="postback-type" id="postback-type">
-                                    <option value="item-1">S2S (htp://...)<div class="icon-arrow-down"></div></option>
-                                    <option value="item-2">IPsec</option>
-                                    <option value="item-3">DNS</option>
-                                    <option value="item-4">DHCP</option>
-                                    <option value="item-5">IAX</option>
-                                    <option value="item-5">InterMUD</option>
+                                    <option value="s2s">S2S (htp://...)<div class="icon-arrow-down"></div></option>
+                                    <option value="ipsec">IPsec</option>
+                                    <option value="dns">DNS</option>
+                                    <option value="dhcp">DHCP</option>
+                                    <option value="iax">IAX</option>
+                                    <option value="intermud">InterMUD</option>
                                 </select>
                             </div>
                             <div class="field">
@@ -148,11 +148,11 @@
                                 </div>
                                 <select name="postback-country" id="postback-country">
                                     <option value="">Select countries</option>
-                                    <option value="item-2">Germany</option>
-                                    <option value="item-3">France</option>
-                                    <option value="item-4">United Kingdom</option>
-                                    <option value="item-5">Swiss</option>
-                                    <option value="item-5">Belgium</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="france">France</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="switzerland">Switzerland</option>
+                                    <option value="belgium">Belgium</option>
                                 </select>
                             </div>
                             <div class="field">
@@ -161,11 +161,11 @@
                                 </div>
                                 <select name="postback-type" id="postback-type">
                                     <option value="">Select</option>
-                                    <option value="item-2">Kick'em all</option>
-                                    <option value="item-3">Snitch'em all</option>
-                                    <option value="item-4">Hit'em all</option>
-                                    <option value="item-5">Reverse'em all</option>
-                                    <option value="item-5">Get'em all</option>
+                                    <option value="kick">Kick'em all</option>
+                                    <option value="snitch">Snitch'em all</option>
+                                    <option value="hit">Hit'em all</option>
+                                    <option value="reverse">Reverse'em all</option>
+                                    <option value="gete">Get'em all</option>
                                 </select>
                             </div>
                         </div>
@@ -173,36 +173,68 @@
                             <div class="field__wide">
                                 <div class="postback__heading label"><span class="red_bold">NOT</span> send statuses</div>
                                 <div class="postback__values">
-                                    <div class="postback__checkbox">
-                                        <input type="checkbox" id="checkNumber" name="checkNumber">
-                                        <div class="postback__icon"></div>
-                                        <label>checkNumber</label>
+
+                                    <div class="checkbox">
+                                        <div class="checkbox__left">
+                                            <input type="checkbox" id="checkNumber">
+                                            <label for="checkNumber">checkNumber</label>
+                                        </div>
+                                        <div class="checkbox__right">
+                                            <div class="icon-show"></div>
+                                        </div>
                                     </div>
-                                    <div class="postback__checkbox">
-                                        <input type="checkbox" id="noAnswer" name="noAnswer">
-                                        <div class="postback__icon"></div>
-                                        <label>noAnswer</label>
+                                    <div class="checkbox">
+                                        <div class="checkbox__left">
+                                            <input type="checkbox" id="noAnswer">
+                                            <label for="noAnswer">noAnswer</label>
+                                        </div>
+                                        <div class="checkbox__right">
+                                            <div class="icon-show"></div>
+                                        </div>
                                     </div>
-                                    <div class="postback__checkbox">
-                                        <input type="checkbox" id="noCall" name="noCall">
-                                        <div class="postback__icon"></div>
-                                        <label>noCall</label>
+                                    <div class="checkbox">
+                                        <div class="checkbox__left">
+                                            <input type="checkbox" id="noCall">
+                                            <label for="noCall">noCall</label>
+                                        </div>
+                                        <div class="checkbox__right">
+                                            <div class="icon-show"></div>
+                                        </div>
                                     </div>
-                                    <div class="postback__checkbox">
-                                        <input type="checkbox" id="callAgain" name="callAgain">
-                                        <div class="postback__icon"></div>
-                                        <label>callAgain</label>
+                                    <div class="checkbox">
+                                        <div class="checkbox__left">
+                                            <input type="checkbox" id="callAgain">
+                                            <label for="callAgain">callAgain</label>
+                                        </div>
+                                        <div class="checkbox__right">
+                                            <div class="icon-show"></div>
+                                        </div>
                                     </div>
-                                    <div class="postback__checkbox">
-                                        <input type="checkbox" id="noShit" name="noShit">
-                                        <div class="postback__icon"></div>
-                                        <label>noShit</label>
+                                    <div class="checkbox">
+                                        <div class="checkbox__left">
+                                            <input type="checkbox" id="noWay">
+                                            <label for="noWay">noWay</label>
+                                        </div>
+                                        <div class="checkbox__right">
+                                            <div class="icon-show"></div>
+                                        </div>
                                     </div>
+                                    <div class="checkbox">
+                                        <div class="checkbox__left">
+                                            <input type="checkbox" id="noShit">
+                                            <label for="noShit">noShit</label>
+                                        </div>
+                                        <div class="checkbox__right">
+                                            <div class="icon-show"></div>
+                                        </div>
+                                    </div>
+<!--
                                     <div class="postback__checkbox">
                                         <input type="checkbox" id="noWay" name="noWay">
                                         <div class="postback__icon"></div>
                                         <label>noWay</label>
                                     </div>
+-->
                                 </div>
                             </div>
                             <div class="field__wide">

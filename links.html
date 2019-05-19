@@ -73,7 +73,7 @@
                     </div>
                 </a>
             </div>
-            <div class="menu__manager__container" id="open-chat-1">
+            <div class="menu__manager__container button" data-modal="modalTwo">
                 <div class="menu__manager__heading">
                     <p>Your manager</p>
                 </div>
@@ -87,7 +87,6 @@
                     </div>
                 </div>
             </div>
-            <button name="openchat" id="open-chat-2">fire</button>
         </section>
 <!--menu end-->
 <!--topbar start-->
@@ -101,11 +100,11 @@
                     <div class="topbar__notification_icon icon-notification"></div>
                     <div class="topbar__notification_new"></div>
             </div>
-            <div class="topbar__user">
+            <div class="topbar__user" data-modal="modalThree">
                 <div class="topbar__user_icon icon-profile"></div>
                 <div class="topbar__user_name">Leonardo DiCaprio</div>
             </div>
-            <div class="topbar__exit icon-quit"></div>
+            <div class="topbar__exit icon-quit" data-modal="modalTwo"></div>
         </section>
 <!--topbar end-->
 <!--content start-->
@@ -114,7 +113,7 @@
                 <div class="box__heading">Links</div>
                 <div class="box__fluid">
                     <div class="box__fluid_688">
-                        <button type="button" id="open-links-modal-1" class="button__text">+add new</button>
+                        <button type="button" class="button__text button" data-modal="modalOne">+add new</button>
                         <table class="table_sm">
                             <tr class="table__row">
                                 <td class="table__cell table_sm__name">Home Page</td>
@@ -217,18 +216,225 @@
                                 </td>
                             </tr>
                         </table>
-                        <button type="button" id="open-links-modal-2" class="button__text">+add new</button>
+                        <button type="button" class="button__text button" data-modal="modalOne">+add new</button>
                     </div>
                 </div>
             </div>
         </section>
+<!--
         <section>
             <div class="overlay" id="overlay">
                 <div class="modal" id="myModal">
-<!--modal content - start-->
                     <div class="heading__box">
                         <div class="heading">Add URL</div>
                         <div class="btn-close js--close-modal icon-close"></div>
+                    </div>
+                    <div class="modal__fluid">
+                        <form action="" method="POST" class="links-modal">
+                            <div class="postback__box">
+                                <div class="field field__wide">
+                                    <div class="label">
+                                        <label for="scheme-name">Scheme name</label>
+                                    </div>
+                                    <input type="text" id="scheme-name" name="scheme-name" placeholder="Name">
+                                </div>
+                                <div class="field field__wide">
+                                    <div class="label">
+                                        <label for="select-campaign">Select campaign </label>
+                                    </div>
+                                    <select name="select-campaign" id="select-campaign">
+                                        <option value="">Select</option>
+                                        <option value="expensive">Expensive</option>
+                                        <option value="moderate">Moderate</option>
+                                        <option value="cheap">Cheap</option>
+                                        <option value="vcheap">Very cheap</option>
+                                        <option value="vvcheap">Very very cheap</option>
+                                        <option value="free">Free</option>
+                                    </select>
+                                </div>
+                                <div class="field field__narrow">
+                                    <div class="label">
+                                        <label for="language">Language</label>
+                                    </div>
+                                    <select name="language" id="language">
+                                        <option value="en">EN</option>
+                                        <option value="de">DE</option>
+                                        <option value="fr">FR</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="checkbox__box">
+                                <div class="select__website__heading">Select websites</div>
+                                <div class="select__website__values">           
+                                    <div class="select__website__column">                 
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpyourchoice">
+                                                <label for="lpyourchoice">LP Your Choice</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="landingpagemoney">
+                                                <label for="landingpagemoney">Landing Page Money</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpwallet">
+                                                <label for="lpwallet">LP Wallet</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="eshop01">
+                                                <label for="eshop01">E-shop 01</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpiconstore">
+                                                <label for="lpiconstore">LP Icon Store</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select__website__column">
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="senatorpromo">
+                                                <label for="senatorpromo">Senator Promo</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="chucknorrisep">
+                                                <label for="chucknorrisep">Chuck Norris EP</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpspacejam">
+                                                <label for="lpspacejam">LP Space Jam</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="espnshox">
+                                                <label for="espnshox">ESPN Shox1</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpmilitaryservice">
+                                                <label for="lpmilitaryservice">LP Military Service</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select__website__column">
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="parliamentpromo">
+                                                <label for="parliamentpromo">Parliament Promo</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpedithpiaf">
+                                                <label for="lpedithpiaf">LP Edith Piaf</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="pzeronero">
+                                                <label for="pzeronero">P Zero Nero</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="abctell">
+                                                <label for="abctell">ABC Tell</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="checkbox__left">
+                                                <input type="checkbox" id="lpparamil">
+                                                <label for="lpparamil">LP Para-Mil</label>
+                                            </div>
+                                            <div class="checkbox__right">
+                                                <div class="icon-show"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="postback__box">
+                                <div class="select__website__genlink">
+                                    <input type="text" id="generatedlink" name="generatedlink" placeholder="Generated link">
+                                </div>
+                                <div class="select__website__buttons">
+                                    <button class="button__text button__inactive">
+                                            <div class="icon-links button__icon"></div>
+                                            <div class="button__title">Copy link</div>
+                                    </button>
+                                    <button class="button__text button__narrow" type="submit">Save</button>
+                                    <button class="button__text button__narrow js--close-modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+<!-- start TESTINGTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTt -->
+        <section class="modalsec">
+            <div class="modal" id="modalOne">
+                <div class="modal-content">
+                    <div class="heading__box">
+                        <div class="heading">Add URL</div>
+                        <div class="btn-close close icon-close"></div>
                     </div>
                     <div class="modal__fluid">
                         <form action="" method="POST" class="links-modal">
@@ -421,68 +627,93 @@
                                 </div>
                                 <div class="select__website__buttons">
                                     <button class="button__text button__inactive">
-                                        <!--<div class="button__box">-->
-                                            <div class="icon-links button__icon"></div>
-                                            <div class="button__title">Copy link</div>
-                                        <!--</div>-->
+                                        <div class="icon-links button__icon"></div>
+                                        <div class="button__title">Copy link</div>
                                     </button>
                                     <button class="button__text button__narrow" type="submit">Save</button>
-                                    <button class="button__text button__narrow js--close-modal">Cancel</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
-<!-- modal content - end-->
-<!-- modal #myModal2 do not fire - start -->
-        <section>
-            <div class="overlay" id="overlay">
-                <div class="modal" id="myModal2">
-                    <div class="btn-close js--close-modal">x</div>
-                
-                    <h4>Witaj w modalu!</h4>
-                    <p>Lorem ipsum dolor sit amet...</p>
-                
-                    <button class="js--close-modal">Okay</button>
-                </div>
-            </div>
-        </section>
-<!-- modal #myModal2 do not fire - end-->
-<!-- modal #chatModal do not fire - start-->
-        <section>
-            <div class="overlay" id="overlay">
-                <div class="modal" id="chatModal">
+            <div class="modal" id="modalTwo">
+                <div class="modal-content">
                     <div class="heading__box">
-                        <div class="heading">Online chat with your Personal Manager</div>
-                        <div class="btn-close js--close-modal icon-close"></div>
+                        <div class="heading">Online chat with your Manager</div>
+                        <div class="btn-close close icon-close"></div>
+                    </div>          
+                    <div class="chat__fluid">
+                        <div class="chat__box__manager">
+                            <img src="images/manager-photo.png" alt="Manager Photo" class="manager__photo">
+                        </div>
+                        <div class="chat__box__manager">
+                            <div class="manager__name">Mikhael E.</div>
+                            <div class="manager__status">online</div>
+                        </div>
                     </div>
-                    <div class="modal__fluid">
-                        <form action="" method="POST">
-                            <div class="postback__box">
-                                <div class="field">
-                                    <div class="label">
-                                        <label for="entermessage">Scheme name</label>
-                                    </div>
-                                    <input type="text" id="entermessage" name="entermessage" placeholder="Enter message">
-                                </div>
-                            </div>
-                        </form>
+                    <div class="chat__box bottom__line">
+                        <div class="display__flex">
+                            <div class="chat__field chat__field__manager">Can I help you?</div>
+                        </div>
+                        <div class="display__flex">
+                            <div class="chat__field chat__field__user">Hello, I would like to know about Postback.</div>
+                        </div>
+                        <div class="display__flex">
+                            <div class="chat__field chat__field__manager">5 min., Ok?</div>
+                        </div>
+                    </div>
+                    <div class="postback__box">
+                        <div class="select__website__genlink">
+                            <input type="text" id="chatform" name="chatform" placeholder="Enter message">
+                        </div>
+                        <div class="select__website__buttons">
+                            <button class="button__text button__narrow" type="submit">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="modal" id="modalThree">
+                <div class="modal-content">
+                    <div class="heading__box">
+                        <div class="heading">Online chat with your Manager</div>
+                        <div class="btn-close close icon-close"></div>
+                    </div>          
+                    <div class="chat__fluid">
+                        <div class="chat__box__manager">
+                            <img src="images/manager-photo.png" alt="Manager Photo" class="manager__photo">
+                        </div>
+                        <div class="chat__box__manager">
+                            <div class="manager__name">Mikhael E.</div>
+                            <div class="manager__status">online</div>
+                        </div>
+                    </div>
+                    <div class="chat__box bottom__line">
+                        <div class="dinline">
+                            <div class="chat__field chat__field__manager">Can I help you?</div>
+                        </div>
+                        <div class="dinline">
+                            <div class="chat__field chat__field__user">Hello, I would like to know about Postback.</div>
+                        </div>
+                        <div class="dinline">
+                            <div class="chat__field chat__field__manager">5 min., Ok?</div>
+                        </div>
+                    </div>
+                    <div class="postback__box">
+                        <div class="select__website__genlink">
+                            <input type="text" id="chatform" name="chatform" placeholder="Enter message">
+                        </div>
+                        <div class="select__website__buttons">
+                            <button class="button__text button__narrow" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </section>
-<!-- modal #chatModal do not fire - end-->
+<!-- end TESTINGTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTt -->
 <!-- content - end-->
         <script src="js/script.js"></script>
         <script src="js/togglemenu.js"></script>
-        <script src="js/togglemodal.js"></script>
-<!--
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.selectboxit/3.8.0/jquery.selectBoxIt.min.js"></script>
-        <script src="js/showflag.js"></script>
--->
+        <script src="js/showmodal.js"></script>
     </body>
 </html>

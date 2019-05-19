@@ -87,28 +87,13 @@ font-weight: 400;
     padding-right: 20px;
     border-left: 1px solid $box--line;
     color: $top-bar--text;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
     .topbar {
         display: flex;
-        //justify-content: flex-end;
         position: static;
         width: 100%;
     }
 }
-
-@media(min-width: 768px) {
-
-}
-
-/*
-
-@media(min-width: 992px) {
-
-}
-
-@media(min-width: 1200px) {
-
-}
-*/

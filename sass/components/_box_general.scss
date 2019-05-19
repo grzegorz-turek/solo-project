@@ -2,7 +2,6 @@
     background-color: $menu--text--hover;
     margin: 18px 18px 18px 206px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    //border: 3px solid lightgreen; //DEL
     &:first-of-type {
         margin-top: 78px;
     }
@@ -11,14 +10,12 @@
 .box__fluid {
     display: flex;
     justify-content: center;
-    //border: 3px solid blue; //DEL
     padding-bottom: $padding--bottom;
 }
 
 .box__fluid_688 {
     width: 688px;
     margin: 0 20px;
-    //border: 3px solid yellowgreen; //DEL
 }
 
 .data {
@@ -26,7 +23,6 @@
     max-width: 100%;
     border-collapse: collapse;
     white-space: nowrap;
-    //border: 3px solid red; //DEL    
 }
 
 .data__row {
@@ -38,7 +34,6 @@
     font-size: $box--font-size--heading;
     font-weight: 700;
     border-bottom: 1px solid $box--line;
-    //border: 3px solid purple; // DEL
 }
 
 .data__value {
@@ -47,7 +42,6 @@
     font-size: $box--font-size--heading;
     font-weight: 300;
     border-bottom: 1px solid $box--line;
-    //border: 3px solid green; // DEL
 }
 
 .data__space {
@@ -62,14 +56,45 @@
     padding: 0 0 40px 0;
 }
 
-.graph__picture {
-    max-width: 100%;
-    object-fit: scale-down;
+.graph__legend {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    .button__text {
+        margin: 0;
+        cursor: default;
+        font-size: 16px;
+        color: $top-bar--text--user-name;
+        &:not(:last-of-type) {
+            background-color: $box--line;
+        }
+        &:last-of-type {
+            background-color: $menu--text--hover;
+        }
+    }
+}
+
+.button__circle {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.button__circle__blue {
+    background-color: #8DBEC8;
+}
+
+.button__circle__orange {
+    background-color: #F29E4E;
+}
+
+.button__circle__green {
+    background-color: #71B374;
 }
 
 .table__row {
     border-top: 1px solid $box--line;
-    //border: 1px solid purple; //DEL
     &:hover {
         background-color: $container--bg--color;
     }
@@ -122,7 +147,6 @@
     font-weight: 300;
     font-size: 14px;
     cursor: pointer;
-    //border: 3px solid gold; //DEL
 }
 
 .table__scroll_wrapper {
@@ -130,7 +154,6 @@
     width: 100%;
     overflow-x: auto;
     padding-bottom: $padding--bottom;
-    //border: 3px solid blueviolet; //DEL
 }
 
 .table {
@@ -138,7 +161,6 @@
     max-width: 100%;
     border-collapse: collapse;
     white-space: nowrap;
-    //border: 3px solid gold; //DEL
 }
 
 .table__links {
@@ -148,7 +170,6 @@
     padding-bottom: $padding--bottom;
     justify-content: center;
     font-size: 16px;
-    //border: 3px solid gray; //DEL
 }
 
 .table__links > li {
@@ -157,7 +178,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    //border: 3px solid red; //DEL
     cursor: pointer;
     color: $box--font-color;
 }
@@ -176,7 +196,6 @@
     border-collapse: collapse;
     white-space: nowrap;
     margin-bottom: $padding--bottom;
-    //border: 3px solid orange; //DEL
 }
 
 .table_sm__name {
@@ -198,21 +217,18 @@
     padding: 18px 18px 18px 0;
     display: flex;
     justify-content: flex-end;
-    //border: 3px solid blue; // DEL
 }
 
 .table_sm__icon__links {
     color: $menu--bg--hover-stripe;
     cursor: pointer;
     visibility: hidden;
-    //border: 3px solid gold; // DEL
 }
 
 .table_sm__icon__trash {
     color: $top-bar--text;
     cursor: pointer;
     visibility: hidden;
-    //border: 3px solid silver; // DEL
 }
 
 .personal_data input[type="text"] {
@@ -228,12 +244,10 @@
 }
 
 .personal_data {
-    //border: 3px solid red; //DEL
     width: 100%;
 }
 
 .personal_data .label {
-    //border: 3px solid yellow; //DEL
     width: 150px;
     color: $box--font-color;
     font-weight: 700;
@@ -244,7 +258,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 0 15px 0;
-    //border: 3px solid blue; //DEL
 }
 
 .personal_data .br {
@@ -253,7 +266,6 @@
 }
 
 .postback {
-    //border: 3px solid yellow; //DEL
     width: 100%;
     padding: 0 18px;
 }
@@ -261,7 +273,6 @@
 .postback__box {
     display: flex;
     width: 100%;
-    //border: 3px solid orangered; //DEL
 }
 
 .postback__title {
@@ -273,7 +284,6 @@
 
 .postback .field {
     display: block;
-    //border: 3px solid blue; //DEL
     width: 100%;
     &:not(:last-of-type) {
         margin-right: 18px;
@@ -282,7 +292,6 @@
 }
 
 .postback .field__wide {
-    //border: 3px solid gold; //DEL
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 1px solid $box--line;
@@ -306,7 +315,6 @@
     color: $box--font-color--dark;
     font-size: 14px;
     font-weight: 300;
-    //border: 3px solid gold; //DEL
     padding: 0 15px;
 }
 
@@ -316,7 +324,6 @@
     color: $box--font-color--dark;
     font-size: 14px;
     font-weight: 300;
-    //border: 3px solid silver; //DEL
     padding: 0 15px;
     display: flex;
     align-items: center;
@@ -329,37 +336,10 @@
 
 .postback__values > div {
     margin-bottom: 20px;
-    //border: 3px solid silver; //DEL
 }
 
 .postback .red_bold {
     color: $box--button-orange;
-}
-
-.postback__checkbox {
-    display: flex;
-    align-items: center;
-    //border: 3px solid violet; //DEL
-    input[type="checkbox"] {
-        position: absolute;
-        margin: 0;
-        width: 14px;
-        height: 14px;
-        opacity: 0;
-        + .postback__icon {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            border: 1px solid $box--line;
-        }
-        &:checked + .postback__icon {
-            background-color: $box--button-orange;
-            //border: 3px solid violet; //DEL
-        }
-    }
-    label {
-        margin-left: 5px;
-    }
 }
 
 .postback .label {
@@ -367,7 +347,6 @@
     color: $box--font-color;
     font-size: 16px;
     font-weight: 700;
-    //border: 3px solid green; //DEL
 }
 
 .postback__textarea {
@@ -412,10 +391,8 @@
 .range__label {
     display: flex;
     justify-content: space-between;
-    //border: 3px solid blue; //DEL
 }
 
-// ************************ range styling - start ************************
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
@@ -498,55 +475,48 @@ input[type=range]::-ms-fill-lower {
 input[type=range]::-ms-fill-upper {
     background: $box--line;
 }
-// ************************ range styling - end ************************
-// ************************ modal stying - start ************************
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    padding: 40px;
-    display: none;
-}
 
-.overlay.show {
-    display: flex;
-}
+.modalsec {
+    .modal { // .overlay
+        position: fixed;
+            left: 0;
+            top: 0;
+        z-index: 8888;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        display: none;
+        overflow: auto;
+        overflow: auto;
+        padding: 40px;
+    }
+    
+    .modal-content {
+        background-color: white;
+        width: 100%;
+    }
 
-.modal {
-    width: 100%;
-    background-color: #ffffff;
-    //position: relative;
-    display: none;
-    //border: 3px solid yellow; //DEL
-}
-
-.modal.show {
-    display: block;
+    .modal-content-2 {
+        background-color: white;
+        width: 300px;
+        //margin: 10vh auto;
+        //width: 80%;
+    }
 }
 
 .modal__fluid {
     display: flex;
     justify-content: center;
-    //border: 3px solid blue; //DEL
     margin-bottom: $padding--bottom--modal;
 }
 
 .links-modal {
-    //border: 5px solid gray;
     width: 100%;
 }
 
 .modal .postback__box {
-    &:not(:last-of-type) {
         padding-bottom: $padding--bottom--modal;
-    }    
 }
 
 .modal .heading__box {
@@ -556,7 +526,6 @@ input[type=range]::-ms-fill-upper {
     margin-bottom: $padding--bottom--modal;
     border-bottom: 1px solid $box--line;
     padding: 18px;
-    //border: 3px solid red; //DEL
 }
 
 .modal .heading {
@@ -564,7 +533,6 @@ input[type=range]::-ms-fill-upper {
     font-size: $box--font-size--heading;
     font-weight: 500;
     text-transform: uppercase;
-    //border: 3px solid gold; //DEL
 }
 
 .modal .btn-close {
@@ -572,7 +540,6 @@ input[type=range]::-ms-fill-upper {
     font-size: $box--font-size--heading;
     font-weight: 500;
     cursor: pointer;
-    //border: 3px solid blue; //DEL
 }
 
 .modal .label {
@@ -580,12 +547,9 @@ input[type=range]::-ms-fill-upper {
     color: $box--font-color;
     font-size: 16px;
     font-weight: 700;
-    //border: 3px solid orange; //DEL
-
 }
 
 .modal .field {
-    //border: 3px solid black; //DEL
     width: 100%;
     margin-right: 15px;
     &:first-of-type {
@@ -611,7 +575,6 @@ input[type=range]::-ms-fill-upper {
     color: $box--font-color--dark;
     font-size: 14px;
     font-weight: 300;
-    //border: 3px solid gray; //DEL
 
 }
 .modal #select-campaign, .modal #language {
@@ -630,11 +593,98 @@ input[type=range]::-ms-fill-upper {
     width: 100%;
     color: $box--font-color--dark;
     font-weight: 300;
-    //border: 3px solid black; //DEL
 }
-// ************************ modal stying - end ************************
 
-//************************ checkbox styling - start ************************
+.manager__photo {
+    width: 70px;
+    height: 70px;
+    margin: 0 25px;
+}
+
+.chat__fluid {
+    display: flex;
+    align-items: center;
+    &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+}
+
+.display__flex {
+    display: flex;
+}
+
+.chat__box {
+    display: block;
+    border-top: 1px solid $box--line;
+}
+
+.chat__form {
+    display: flex;
+}
+
+.chat__input {
+    width: 100%;
+}
+
+.chat__field {
+    margin: 20px;
+    padding: 20px;
+}
+
+.chat__field__user {
+    border-radius: 10px;
+    background-color: $top-bar--text--user-name;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;  
+    &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+            top: 379px;
+            left: 350px;
+        background: linear-gradient(45deg, $top-bar--text--user-name 50%, transparent 50%);
+        transform: rotate(45deg);
+    } 
+}
+
+.chat__field__manager {
+    border-radius: 10px;
+    background-color: $box--font-color;
+    color: $box--font-color--dark;
+    font-size: 14px;
+    font-weight: 300;   
+    &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+            top: 226px;
+            left: 50px;
+        background: linear-gradient(45deg, $box--font-color 50%, transparent 50%);
+        transform: rotate(-135deg);
+    } 
+    &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+            top: 420px;
+            left: 50px;
+        background: linear-gradient(45deg, $box--font-color 50%, transparent 50%);
+        transform: rotate(-135deg);
+    }
+}
+
+.chat__block {
+    display: block;
+}
+
+.bottom__line {
+    border-bottom: 1px solid $box--line;
+    margin-bottom: 20px;
+}
 .select__website__heading {
     //border: 3px solid gold; //DEL
     margin: 20px 15px;
@@ -747,16 +797,12 @@ input[type=range]::-ms-fill-upper {
     }
 }
 
-//************************ checkbox styling - end ************************
-
 .select__website__genlink {
-    //border: 1px solid green; //DEL
     width: 100%;
     margin-left: 20px;
 }
 
 .select__website__buttons {
-    //border: 1px solid blueviolet; //DEL
     display: flex
 }
 
@@ -765,7 +811,7 @@ input[type=range]::-ms-fill-upper {
     margin-bottom: 0;
     margin-left: 15px;
     &:last-of-type {
-        margin-right: 15px;
+        margin-right: 20px;
     }
 }
 
@@ -782,12 +828,28 @@ input[type=range]::-ms-fill-upper {
 
 .modal .button__narrow {
     width: 90px;
-    //border: 5px solid lightseagreen; //DEL
 }
 
 .button__inactive {
     background: $box--line;
 }
+
+.manager__name {
+    color: $menu--bg;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.manager__status {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+    width: 42px;
+    border-radius: 3px;
+    background-color: #04ae00;
+}
+
 
 @media (max-width: 767px) {
     .box {
@@ -799,17 +861,3 @@ input[type=range]::-ms-fill-upper {
         }
     }
 }
-
-/*
-@media(min-width: 768px) {
-    @include grid(md);
-}
-
-@media(min-width: 992px) {
-    @include grid(lg);
-}
-
-@media(min-width: 1200px) {
-    @include grid(xl);
-}
-*/
