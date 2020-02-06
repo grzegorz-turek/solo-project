@@ -1,5 +1,3 @@
-https://grzegorz-turek.github.io/solo-project/
-
 # Add Banners Online Management
 
 ## 1. To run project remotely (GitHub Pages): [ click here](https://grzegorz-turek.github.io/solo-project/)
