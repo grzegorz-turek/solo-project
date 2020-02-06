@@ -37,7 +37,7 @@ var chart = new Chart(ctx, {
                 right: 0,
                 top: 0,
                 bottom: 0
-            }
+            },
         },
         legend: {
             display: false,

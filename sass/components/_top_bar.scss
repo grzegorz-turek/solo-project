@@ -8,6 +8,7 @@
     height: 60px;
     border-bottom: 1px solid $box--line;
     background-color: $menu--text--hover;
+    z-index: 9999999999999999999;
 }
 
 .topbar__wallet {
