@@ -109,8 +109,8 @@
                 <div class="box__fluid">
                     <div class="calendar">
                         <form>
-                            <input type="date" class="calendar__from" id="id_date_from" name="name_date_from" value="2016-05-16">
-                            <input type="date" class="calendar__to" id="id_date_to" name="name_date_to" value="2016-05-16">
+                            <input type="date" class="calendar__from" id="id_date_from" name="name_date_from" value="2016-05-16" aria-labelledby="fromdate">
+                            <input type="date" class="calendar__to" id="id_date_to" name="name_date_to" value="2016-05-16" aria-labelledby="todate">
                         </form>
                         <div class="calendar__icon icon-calendar"></div>
                     </div>
@@ -248,7 +248,7 @@
                     </div>
                     <div class="postback__box">
                         <div class="select__website__genlink">
-                            <input type="text" id="chatform" name="chatform" placeholder="Enter message">
+                            <input type="text" id="chatform" name="chatform" placeholder="Enter message" aria-labelledby="chatform">
                         </div>
                         <div class="select__website__buttons">
                             <button class="button__text button__narrow" type="submit">Send</button>
@@ -278,10 +278,10 @@
                         <form action="" method="POST" class="links-modal">
                             <div class="postback__box">
                                 <div class="field__login field__wide">
-                                    <input type="text" id="loginname" name="loginname" placeholder="login name">
+                                    <input type="text" id="loginname" name="loginname" placeholder="login name" aria-labelledby="loginname">
                                 </div>
                                 <div class="field__login field__wide">
-                                    <input type="text" id="password" name="password" placeholder="password">
+                                    <input type="text" id="password" name="password" placeholder="password" aria-labelledby="password">
                                 </div>
                                 <button class="button__text" type="submit">Enter</button>
                             </div>
