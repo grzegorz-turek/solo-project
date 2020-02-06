@@ -8,5 +8,5 @@
 - run Development: ```npm run watch``` in root folder
 - view website on ```http://localhost:3000/```
 
-## 3. Main technologies used in this app:
+## 3. Main technologies used:
 - HTML, CSS
